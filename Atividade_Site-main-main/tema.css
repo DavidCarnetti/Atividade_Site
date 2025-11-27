@@ -1,0 +1,185 @@
+/* -------------------- RESET -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------------------- HEADER / TOPO -------------------- */
+
+.topo {
+    width: 100%;
+    background: black; /* mesma cor do site */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+}
+
+/* LOGO */
+.logo img {
+    height: 55px;
+    width: auto;
+    border-radius: 8px;
+}
+
+/* MENU */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li a {
+    color: #02ff2c;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: white;
+    text-shadow: 0px 0px 10px #02ff2c;
+}
+
+/* -------------------- FOTO DO HOME -------------------- */
+
+.FT {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.FT img {
+    width: 260px;
+    border-radius: 50%;
+    border: 6px solid #02ff2c;
+    box-shadow: 0 0 20px #02ff2c;
+}
+
+/* -------------------- TITULOS HOME -------------------- */
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 34px;
+    color: #02ff2c;
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 5px;
+    color: white;
+}
+
+/* -------------------- MAIN -------------------- */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+main section {
+    margin-bottom: 35px;
+}
+
+main h3 {
+    font-size: 25px;
+    color: #02ff2c;
+    margin-bottom: 12px;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 27px;
+    color: rgb(230, 230, 230);
+}
+
+/* -------------------- PROJETOS -------------------- */
+
+.titulo-projetos {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #02ff2c;
+    font-size: 32px;
+}
+
+/* -------------------- CONTATO -------------------- */
+
+.CTT {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 40px;
+    background: #000;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px #02ff2c; /* sombra antiga preservada */
+    color: white;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    border-top: 2px solid #02ff2c;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    filter: invert(70%) sepia(80%) saturate(300%) hue-rotate(85deg);
+    transition: 0.3s;
+}
+
+/* hover footer */
+footer a:hover img {
+    filter: brightness(200%);
+}
+
+footer a:hover p {
+    color: #02ff2c;
+}
+
+/* -------------------- RESPONSIVIDADE -------------------- */
+
+@media (max-width: 600px) {
+
+    .menu {
+        gap: 12px;
+    }
+
+    .menu li a {
+        font-size: 16px;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
